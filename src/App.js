@@ -64,11 +64,11 @@ function Skills() {
         <h2>Technical Experience</h2>
         <p>
           <ul>
-            <li>SQL commands and building basic databases (i.e. Account Systems)</li>
+            <li>Git and Version Control Procedures <FaGitSquare/></li>
             <li>Web Development</li>
             <ul>
-              <li>Frontend - ReactJS <FaReact/></li>
-              <li>Backend - Django & ExpressJS</li>
+              <li>Frontend Frameworks - ReactJS <FaReact/></li>
+              <li>Backend Frameworks - Django</li>
             </ul>
             <li>Data Structures</li>
             <ul>
@@ -82,10 +82,13 @@ function Skills() {
               <li>Linear and Binary Search</li>
               <li>Insertion, Bubble, Quick, etc. Sorting Algorithms</li>
             </ul>
-            <li>Git and Version Control Procedures <FaGitSquare/></li>
-            <li>Object Oriented Programming & Markup Languages</li>
+            <li>Programming Paradigms</li>
+            <ul> 
+              <li>Object Oriented Programming</li>
+              <li>Functional Programming</li>
+            </ul>
             <li>Basic arduino commands</li>
-            <li>Low level understanding of computer networks (i.e. TCP/IP Protocol)</li>
+            <li>Basic understanding of computer networks (i.e. TCP/IP Protocol)</li>
         </ul>
         </p>
       </div>
