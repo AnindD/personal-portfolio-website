@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react'
+import { FaPython, FaJs, FaJava, FaDatabase, FaReact, FaGitSquare} from "react-icons/fa";
 
 function App() {
   let Component; 
@@ -51,10 +52,10 @@ function Skills() {
       <div>
       <p>
         <ul>
-          <li>4 years of experience in Python</li>
-          <li>3 years experience in HTML, CSS and JavaScript.</li>
-          <li>2 years experience in Java</li>
-          <li>Project experience working with SQL</li>
+          <li>4 years of experience in Python <FaPython /></li>
+          <li>3 years experience in HTML, CSS and JavaScript <FaJs/></li>
+          <li>2 years experience in Java <FaJava/></li>
+          <li>Project experience working with SQL <FaDatabase/></li>
           <li>Currently learning C++/C</li>
         </ul>
       </p>
@@ -66,7 +67,7 @@ function Skills() {
             <li>SQL commands and building basic databases (i.e. Account Systems)</li>
             <li>Web Development</li>
             <ul>
-              <li>Frontend - ReactJS</li>
+              <li>Frontend - ReactJS <FaReact/></li>
               <li>Backend - Django & ExpressJS</li>
             </ul>
             <li>Data Structures</li>
@@ -81,7 +82,7 @@ function Skills() {
               <li>Linear and Binary Search</li>
               <li>Insertion, Bubble, Quick, etc. Sorting Algorithms</li>
             </ul>
-            <li>Git and Version Control Procedures</li>
+            <li>Git and Version Control Procedures <FaGitSquare/></li>
             <li>Object Oriented Programming & Markup Languages</li>
             <li>Basic arduino commands</li>
             <li>Low level understanding of computer networks (i.e. TCP/IP Protocol)</li>
@@ -119,13 +120,13 @@ function Projects() {
         </p>
         <h2>Projects</h2>
       </div> 
-      <div className="card-container">
-        <img src="https://picsum.photos/300/200" alt="Card Image" className="card-img"/>
-        <h2 className="card-title">Card Title</h2>
-        <p className="card-description">This is a card description. You can add more details about the card </p>
-        <a href="cardPage" className="card-btn">Learn More</a>
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Card title</h2>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
       </div>
-
     </React.Fragment>
   )
 }
