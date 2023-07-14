@@ -1,6 +1,9 @@
 import './App.css';
 import React from 'react'
-import { FaPython, FaJs, FaJava, FaDatabase, FaReact, FaGitSquare} from "react-icons/fa";
+import { FaPython, FaJs, FaJava, FaDatabase, FaReact, FaGitSquare, FaBuffer, FaHammer, FaGrinAlt, FaFileAlt} from "react-icons/fa";
+//import Card from 'react-bootstrap/Card';
+
+
 
 function App() {
   let Component; 
@@ -27,14 +30,17 @@ function Navbar() {
   return (
     <nav className="nav">
       <ul>
-        <li><a href="/" className="site-title">About Me</a></li>
+        <li><a href="/" className="site-title"><FaGrinAlt/> About Me</a></li>
       </ul>
       <ul>
         <li>
-          <a href="/Projects">Projects</a>
+          <a href="/Projects"><FaBuffer/> Projects</a>
         </li>
         <li>
-        <a href="/skills">Skills</a>
+        <a href="/skills"><FaHammer/> My Skills</a>
+        </li>
+        <li>
+          <a href="/Resume"><FaFileAlt/> Résumé</a>
         </li>
       </ul>
     </nav>
@@ -45,10 +51,11 @@ function Skills() {
   return ( 
     <React.Fragment>
       <div>
-      <h2>Skills</h2>
+      <br/>
+      <h7>Skills</h7>
       <p>Here is a showcase of all my technical skills I have built through the development of my projects.</p>
       </div>
-      <h2>Languages</h2>
+      <h7>Languages</h7>
       <div>
       <p>
         <ul>
@@ -61,7 +68,7 @@ function Skills() {
       </p>
       </div>
       <div>
-        <h2>Technical Experience</h2>
+        <h7>Technical Experience</h7>
         <p>
           <ul>
             <li>Git and Version Control Procedures <FaGitSquare/></li>
@@ -93,7 +100,7 @@ function Skills() {
         </p>
       </div>
       <div>
-        <h2>Languages</h2>
+        <h7>Languages</h7>
         <p id="bottomP">
           <ul>
             <li>Native in oral and written English</li>
@@ -112,24 +119,18 @@ function Projects() {
   return ( 
     <React.Fragment>
       <div>
-        <h2>My Work</h2>
+        <br/>
+        <h7>My Work</h7>
         <p>Here is a showcase of all my projects from beginning to end. My interests are primarily in web development, machine learning and hardware electronics and how we can synthesize them together.</p>
-        <h2>Awards and Certifications</h2>
+        <h7>Awards and Certifications</h7>
         <p>
           <ul>
             <li>2nd place in The 2022 <a id="pLink" href="https://devpost.com/software/propel-r52yae">Queens University Summer Computing Challenge</a></li>
             <li>Silver medalist in the 2023 TDSB skills competition <br/> within the coding subcategory</li>
           </ul>
         </p>
-        <h2>Projects</h2>
+        <h7>Projects</h7>
       </div> 
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title">Card title</h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
     </React.Fragment>
   )
 }
