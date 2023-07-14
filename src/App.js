@@ -1,7 +1,8 @@
 import './App.css';
 import React from 'react'
-import { FaPython, FaJs, FaJava, FaDatabase, FaReact, FaGitSquare, FaBuffer, FaHammer, FaGrinAlt, FaFileAlt} from "react-icons/fa";
-//import Card from 'react-bootstrap/Card';
+import { FaPython, FaJs, FaJava, FaDatabase, FaReact, FaGitSquare, FaBuffer, FaHammer, FaGrinAlt, FaFileAlt, FaGithub, FaLink} from "react-icons/fa";
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 
 
@@ -52,10 +53,10 @@ function Skills() {
     <React.Fragment>
       <div>
       <br/>
-      <h7>Skills</h7>
+      <h2>Skills</h2>
       <p>Here is a showcase of all my technical skills I have built through the development of my projects.</p>
       </div>
-      <h7>Languages</h7>
+      <h2>Languages</h2>
       <div>
       <p>
         <ul>
@@ -68,7 +69,7 @@ function Skills() {
       </p>
       </div>
       <div>
-        <h7>Technical Experience</h7>
+        <h2>Technical Experience</h2>
         <p>
           <ul>
             <li>Git and Version Control Procedures <FaGitSquare/></li>
@@ -100,7 +101,7 @@ function Skills() {
         </p>
       </div>
       <div>
-        <h7>Languages</h7>
+        <h2>Languages</h2>
         <p id="bottomP">
           <ul>
             <li>Native in oral and written English</li>
@@ -120,16 +121,24 @@ function Projects() {
     <React.Fragment>
       <div>
         <br/>
-        <h7>My Work</h7>
-        <p>Here is a showcase of all my projects from beginning to end. My interests are primarily in web development, machine learning and hardware electronics and how we can synthesize them together.</p>
-        <h7>Awards and Certifications</h7>
+        <h2>My Work</h2>
+        <p>Here is a showcase of all my projects from beginning to end. I have many interests within technology including but not limited to: web development, machine learning, computer vision, databases, and digital electronics.</p>
+        <h2>Awards and Certifications</h2>
         <p>
           <ul>
             <li>2nd place in The 2022 <a id="pLink" href="https://devpost.com/software/propel-r52yae">Queens University Summer Computing Challenge</a></li>
             <li>Silver medalist in the 2023 TDSB skills competition <br/> within the coding subcategory</li>
           </ul>
         </p>
-        <h7>Projects</h7>
+        <h2>Projects</h2>
+        <Card id="ProjectCard">
+          <Card.Img variant="top" src="https://github.com/AnindD/URL-Shortener/blob/master/FrontpageURLShortener.png?raw=true" className="img-fluid"/>
+          <Card.Body>  
+            <Card.Title id="ProjectTitle">URL Shortener <FaLink/></Card.Title>
+            <Card.Text id="ProjectDescription">URL Shortener is my first web development project using Django. It is a website which allows users to enter URLs and shorten them. The website will save the original link into a database and create a shortened randomly generated custom link which will redirect you to the website you would like.</Card.Text>
+          <Button id="ProjectButton" href="https://github.com/AnindD/URL-Shortener" variant="outline-dark">View On Github <FaGithub/></Button>
+          </Card.Body>
+        </Card>
       </div> 
     </React.Fragment>
   )
