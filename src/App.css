@@ -13,7 +13,6 @@ h2 {
   padding-left: 30%;
 }
 
- 
 
 p {
   font-size: 16px; 
@@ -21,11 +20,6 @@ p {
   margin-left: 30%;
   margin-right: 250px;
 }
-
-.customCard {
-    width: 10px;
-}
-
 
 .nav { 
   min-width: 603px;
@@ -74,8 +68,9 @@ p {
   bottom: -2px;
   left: 50%;
   transform: translateX(-40%); 
- 
 }
+
+
 
 #pLink {
   color: black; 
@@ -87,7 +82,7 @@ p {
 
 #ProjectCard {
   width: 24rem;
-  margin-left: 30%;
+
 }
 
 #ProjectDescription {
@@ -104,4 +99,7 @@ p {
 
 #ProjectButton {
   width: 95%;
+  margin-bottom: 10px;
 }
+
+ 
