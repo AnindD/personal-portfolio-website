@@ -18,7 +18,7 @@ p {
   font-size: 16px; 
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-left: 30%;
-  margin-right: 250px;
+  margin-right: 30%;
 }
 
 .nav { 
@@ -70,6 +70,14 @@ p {
   transform: translateX(-40%); 
 }
 
+.fade-in {
+  transition: opacity 1s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
 
 
 #pLink {
@@ -102,4 +110,28 @@ p {
   margin-bottom: 10px;
 }
 
+ 
+#frontpageImage {
+  height: 910px;
+}
+
+#biographyImage {
+  display: block; 
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 50%; 
+  height: 400px;
+
+}
+
+#resumePDF {
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 40%; 
+  height: 1000px; 
+}
+
+#aboutMePage {
+  padding-left: 50%; 
+}
  

@@ -1,9 +1,11 @@
 import './App.css';
 import React from 'react'
-import { FaPython, FaJs, FaJava, FaDatabase, FaReact, FaGitSquare, FaBuffer, FaHammer, FaGrinAlt, FaFileAlt, FaGithub, FaLink, FaTrophy} from "react-icons/fa";
+import { FaPython, FaJs, FaJava, FaDatabase, FaReact, FaGitSquare, FaBuffer, FaHammer, FaGrinAlt, FaFileAlt, FaGithub, FaLink, FaTrophy, FaHome} from "react-icons/fa";
+import { SiDevpost } from "react-icons/si";
+import { MdContacts } from "react-icons/md";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import { SiDevpost } from "react-icons/si";
+import Image from 'react-bootstrap/Image'
 
 
 
@@ -19,6 +21,12 @@ function App() {
     case "/skills":
       Component = <Skills></Skills>
       break  
+
+    case "/Resume":
+      Component = <Resume></Resume>
+      break 
+    case "/Aboutme":
+      Component = <AboutMe></AboutMe>
   }
   return (
     <>
@@ -32,9 +40,12 @@ function Navbar() {
   return (
     <nav className="nav">
       <ul>
-        <li><a href="/" className="site-title"><FaGrinAlt/> About Me</a></li>
+        <li><a href="/" className="site-title"><FaHome/> Home</a></li>
       </ul>
       <ul>
+        <li>
+          <a href="/Aboutme"><MdContacts/> About Me</a>
+        </li>
         <li>
           <a href="/Projects"><FaBuffer/> Projects</a>
         </li>
@@ -169,9 +180,40 @@ function Projects() {
 
 function Home() {
   return (
-    <p>Welcome to Anindit's Personal Portfolio!</p>
+    <Image id="frontpageImage" src="https://images.unsplash.com/photo-1543962226-818f4301073f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1907&q=80" fluid/>
+    
   )
 }
 
+function Resume() {
+  const embedURL = "https://drive.google.com/file/d/1O58RjUUqBblmnrvd7xAkXhj_eb359Mld/preview";
+  const downloadURL = "https://drive.google.com/uc?export=download&id=1O58RjUUqBblmnrvd7xAkXhj_eb359Mld"; 
+  return (
+    <React.Fragment>
+      <div className="container">
+        <br/>
+        <h2>Resume</h2>
+        <p><a href={downloadURL}>Click Here To Download PDF</a></p>
+        <iframe id="resumePDF" src={embedURL} title="My Resume"></iframe>
+        
+      </div>
+    </React.Fragment>
+  )
+}
+
+function AboutMe() {
+  const biographyImageLink = "https://images.unsplash.com/photo-1568607689150-17e625c1586e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+  return (
+    <React.Fragment>
+      <br/>  
+      <Image id="biographyImage" src={biographyImageLink} fluid/>
+      <br/>  
+      <h1 id="aboutMePage">About</h1>
+      <p><b>Hello!</b></p>
+      <p>My name is Anindit / <b>Uh-nin-dit</b>, and I am currently studying Electrical and Computer Engineering (ECE) at the University of Toronto. I have interests across a wide range of computer engineering and computer science topics. My primary interests are in machine learning, web development, and firmware/digital electronics. I have done projects on each as shown in my projects section on my website. Additionally, I am interested in combining the three in interdiciplinary projects in the future. I have previously worked at CodeNinjas Leaside as a coding instructor.</p>
+      <p>Currently I am looking for internships or software engineering work experience for the summer of 2024.</p>
+    </React.Fragment>
+  )
+}
 
 export default App;
