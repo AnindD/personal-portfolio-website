@@ -10,15 +10,20 @@ h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   padding-top: 10px;
-  padding-left: 30%;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 30%; 
 }
 
 
 p {
   font-size: 16px; 
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-left: 30%;
-  margin-right: 30%;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 30%; 
 }
 
 .nav { 
@@ -90,13 +95,25 @@ p {
 
 #ProjectCard {
   width: 24rem;
+  margin-bottom: 1%;
 
 }
 
 #ProjectDescription {
-  margin-left: 5%;
-  margin-right: 5%; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;  
+  width: 90%; 
 
+}
+
+#AwardSection {
+  display: block; 
+  margin-top: 1%; 
+  margin-left: auto;
+  margin-right: auto; 
+  text-align: center;
+  width: 90%; 
 }
 
 #ProjectTitle{
@@ -117,21 +134,26 @@ p {
 
 #biographyImage {
   display: block; 
-  margin-left: 30%;
-  margin-right: 30%;
-  width: 50%; 
-  height: 400px;
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 55%; 
+  height: 300px;
+  border-radius: 15%;
 
 }
 
 #resumePDF {
-  margin-left: 30%;
-  margin-right: 30%;
-  width: 40%; 
-  height: 1000px; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 60%;
+  height: 800px; 
 }
 
 #aboutMePage {
-  padding-left: 50%; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  text-align: center; 
 }
  
