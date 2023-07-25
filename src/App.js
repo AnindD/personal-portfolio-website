@@ -68,7 +68,7 @@ function Skills() {
       <h2>Skills</h2>
       <p>Here is a showcase of all my technical skills I have built through the development of my projects.</p>
       </div>
-      <h2>Languages</h2>
+      <h2>Programming Languages</h2>
       <div>
       <p>
         <ul>
@@ -145,6 +145,8 @@ function Projects() {
         <h2>Projects</h2>
       </div> 
       <br/>
+      {/* Card table. Each card row has 3 items. There is an image, a title, a description and buttons to external links. */ }
+      {/* First Row */ }
       <div style={{display: 'flex', justifyContent: 'center', gap: '3rem'}}>
         <Card id="ProjectCard">
           <Card.Img variant="top" src="https://github.com/AnindD/URL-Shortener/blob/master/FrontpageURLShortener.png?raw=true" className="img-fluid"/>
@@ -158,7 +160,8 @@ function Projects() {
           <Card.Img variant="top" src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/186/089/datas/gallery.jpg" className="img-fluid"/>
           <Card.Body>
             <Card.Title id="ProjectTitle">Propel</Card.Title>
-            <Card.Text id="ProjectDescription"><b>2nd Place In QSCC Hackathon 2022 <FaTrophy/></b><br/><br/>Propel is an educational gaming application designed to help children and people who suffer from the condition of dyscalculia. The application was mainly constructed using Pygame, a Python library used for game development. Things such as music, text, buttons, games, timers, etc. were made using Pygame. For the login/create account system we used MySQL, a data management system to hold and save data within the game.</Card.Text>
+            <Card.Text id="AwardSection"><br/><b>2nd Place In QSCC Hackathon 2022 <FaTrophy/></b><br/></Card.Text>
+            <Card.Text id="ProjectDescription">Propel is an educational gaming application designed to help children and people who suffer from the condition of dyscalculia. The application was mainly constructed using Pygame, a Python library used for game development. Things such as music, text, buttons, games, timers, etc. were made using Pygame. For the login/create account system we used MySQL, a data management system to hold and save data within the game.</Card.Text>
             <Button id="ProjectButton" href="https://github.com/AnindD/Queens-Programming-Challenge" variant="outline-dark">View on Github <FaGithub/></Button>
             <Button id="ProjectButton" href="https://devpost.com/software/propel-r52yae" variant="outline-dark">View on Devpost <SiDevpost/></Button>
           </Card.Body>
@@ -171,7 +174,33 @@ function Projects() {
             <Button id="ProjectButton" href="https://github.com/AnindD/Mike-Anindit-s-Discord-Bot-" variant="outline-dark">View on Github <FaGithub/></Button>
           </Card.Body>
         </Card>
- 
+      </div>
+      {/* Second Row */ }
+      <div style={{display: 'flex', justifyContent: 'center', gap: '3rem'}}>
+        <Card id="ProjectCard">
+          <Card.Img variant="top" src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/543/144/datas/gallery.jpg" className="img-fluid"/>
+          <Card.Body>
+            <Card.Title id="ProjectTitle">Predator vs Casualty</Card.Title>
+            <Card.Text id="AwardSection"><br/><b>Submitted to 2023 STEMist Hackathon <FaTrophy/></b><br/></Card.Text>
+            <Card.Text id="ProjectDescription">Predator vs Casualty is an evolution simulator powered through neural networks and deep learning.</Card.Text>
+            <Button id="ProjectButton" href="https://github.com/RamyPoe/PredatorPrey" variant="outline-dark">View on Github <FaGithub/></Button>
+            <Button id="ProjectButton" href="https://devpost.com/software/predators-vs-casualty?ref_content=user-portfolio&ref_feature=in_progress" variant="outline-dark">View on Devpost <SiDevpost/></Button>
+          </Card.Body>
+        </Card>
+        <Card id="ProjectCard">
+          <Card.Img variant="top" src="https://images.unsplash.com/photo-1491484815100-6f2890d04007?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" className="img-fluid"/>
+          <Card.Body>
+            <Card.Title id="AwardSection">Coming Soon...</Card.Title>
+            <Card.Text id="ProjectDescription">More to come soon :)</Card.Text>
+          </Card.Body>
+        </Card>
+        <Card id="ProjectCard">
+          <Card.Img variant="top" src="https://static.billygraham.org/sites/billygraham.org/uploads/pro/2016/09/28110556/joshua-earle-183442-unsplash.jpg" className="img-fluid"/>
+          <Card.Body>
+            <Card.Title id="AwardSection">Coming Soon...</Card.Title>
+            <Card.Text id="ProjectDescription">More to come soon :)</Card.Text>
+          </Card.Body>
+        </Card>
       </div>
       <p id="bottomP"></p>
     </React.Fragment>
